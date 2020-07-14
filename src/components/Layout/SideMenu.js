@@ -21,7 +21,7 @@ function AppSideMenu() {
         defaultSelectedKeys={['markdown-editor']}
       >
         {routes.map(({ key, title, path, icon }) => (
-          <Menu.Item key={key} icon={icon}>
+          <Menu.Item style={{ marginBottom: 10 }} key={key} icon={icon}>
             <NavLink exact to={path}>
               {title}
             </NavLink>
