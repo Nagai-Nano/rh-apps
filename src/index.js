@@ -1,7 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import 'assets/app.less';
-import App from './App';
+import 'assets/style.less';
+import App from 'App';
+import GlobalStyle from 'shared/utils/globalStyle';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <React.Fragment>
+    <GlobalStyle />
+    <App />
+  </React.Fragment>,
+  document.getElementById('root')
+);
