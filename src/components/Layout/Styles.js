@@ -16,8 +16,8 @@ export const Header = styled(Layout.Header)`
 `;
 
 export const Content = styled(Layout.Content)`
-  padding: 1rem 2rem;
-  background: #181818;
+  padding: 1rem;
+  background: #1f1f1f;
 `;
 
 export const Logo = styled.div`
