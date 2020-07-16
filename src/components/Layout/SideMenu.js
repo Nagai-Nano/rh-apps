@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Divider, Menu } from 'antd';
 
 import routes from 'config/routes';
@@ -8,6 +8,8 @@ import logo from 'assets/logo.svg';
 import { Sider, Logo } from './Styles';
 
 function AppSideMenu() {
+  const { pathname } = useLocation();
+
   return (
     <Sider>
       <Logo>
@@ -18,7 +20,7 @@ function AppSideMenu() {
       <Menu
         theme="dark"
         mode="inline"
-        defaultSelectedKeys={['markdown-editor']}
+        defaultSelectedKeys={[pathname.slice(1)]}
       >
         {routes.map(({ key, title, path, icon }) => (
           <Menu.Item style={{ marginBottom: 10 }} key={key} icon={icon}>
