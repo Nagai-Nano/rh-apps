@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Layout } from 'antd';
+import { Layout, Menu as AntdMenu } from 'antd';
 
 export const Sider = styled(Layout.Sider)`
   background: #141414;
@@ -31,5 +31,13 @@ export const Logo = styled.div`
 
   h2 {
     margin: 0;
+  }
+`;
+
+export const Menu = styled(AntdMenu)`
+  background: transparent !important;
+
+  li {
+    padding: 0 10px !important;
   }
 `;

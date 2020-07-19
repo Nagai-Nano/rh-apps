@@ -1,11 +1,11 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Divider, Menu } from 'antd';
+import { Divider } from 'antd';
 
 import routes from 'config/routes';
 import logo from 'assets/logo.svg';
 
-import { Sider, Logo } from './Styles';
+import { Sider, Logo, Menu } from './Styles';
 
 function AppSideMenu() {
   const { pathname } = useLocation();
@@ -23,7 +23,7 @@ function AppSideMenu() {
         defaultSelectedKeys={[pathname.slice(1)]}
       >
         {routes.map(({ key, title, path, icon }) => (
-          <Menu.Item style={{ marginBottom: 10 }} key={key} icon={icon}>
+          <Menu.Item key={key} icon={icon}>
             <NavLink exact to={path}>
               {title}
             </NavLink>
