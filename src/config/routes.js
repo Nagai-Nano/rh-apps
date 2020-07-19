@@ -1,8 +1,13 @@
 import React from 'react';
-import { EditOutlined, ClockCircleOutlined } from '@ant-design/icons';
+import {
+  EditOutlined,
+  ClockCircleOutlined,
+  LockOutlined
+} from '@ant-design/icons';
 
 import MarkdownEditor from 'pages/MarkdownEditor';
 import Countdown from 'pages/Countdown';
+import GenPass from 'pages/GenPass';
 
 export default [
   {
@@ -18,5 +23,12 @@ export default [
     path: '/countdown',
     icon: <ClockCircleOutlined />,
     Component: Countdown
+  },
+  {
+    key: 'gen-pass',
+    title: 'Gen Pass',
+    path: '/gen-pass',
+    icon: <LockOutlined />,
+    Component: GenPass
   }
 ];
