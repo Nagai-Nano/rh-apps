@@ -12,8 +12,8 @@ export const PageTitle = styled.h1`
   font-size: 2.4rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #fff;
   margin-bottom: 1.5rem;
+  font-weight: bold;
 `;
 
 export const PageContent = styled.div`
@@ -23,15 +23,14 @@ export const PageContent = styled.div`
 
   .box {
     width: 49%;
-    border: 1px solid #595959;
+    border: 1px solid #d9d9d9;
     padding: 2rem;
-    border-radius: 4px;
+    border-radius: 3px;
   }
 `;
 
 export const InputGroup = styled.div`
   label {
-    color: #ccc;
     display: inline-block;
     margin-bottom: 4px;
   }
@@ -43,6 +42,5 @@ export const CheckboxGroup = styled.div`
   .ant-checkbox-wrapper > span:nth-child(2) {
     text-transform: capitalize;
     font-size: 1rem;
-    color: #ccc;
   }
 `;

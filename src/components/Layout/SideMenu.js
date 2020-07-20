@@ -17,11 +17,7 @@ function AppSideMenu() {
         <h2>Rh-apps</h2>
       </Logo>
       <Divider />
-      <Menu
-        theme="dark"
-        mode="inline"
-        defaultSelectedKeys={[pathname.slice(1)]}
-      >
+      <Menu mode="inline" defaultSelectedKeys={[pathname.slice(1)]}>
         {routes.map(({ key, title, path, icon }) => (
           <Menu.Item key={key} icon={icon}>
             <NavLink exact to={path}>

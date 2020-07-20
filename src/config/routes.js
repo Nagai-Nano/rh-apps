@@ -2,12 +2,14 @@ import React from 'react';
 import {
   EditOutlined,
   ClockCircleOutlined,
-  LockOutlined
+  KeyOutlined,
+  SyncOutlined
 } from '@ant-design/icons';
 
 import MarkdownEditor from 'pages/MarkdownEditor';
 import Countdown from 'pages/Countdown';
 import GenPass from 'pages/GenPass';
+import TextConverter from 'pages/TextConverter';
 
 export default [
   {
@@ -28,7 +30,14 @@ export default [
     key: 'gen-pass',
     title: 'Gen Pass',
     path: '/gen-pass',
-    icon: <LockOutlined />,
+    icon: <KeyOutlined />,
     Component: GenPass
+  },
+  {
+    key: 'text-converter',
+    title: 'Text Converter',
+    path: '/text-converter',
+    icon: <SyncOutlined />,
+    Component: TextConverter
   }
 ];

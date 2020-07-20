@@ -10,11 +10,11 @@ export const PageContainer = styled.div`
 
 export const CountdownTitle = styled.h1`
   font-size: 5rem;
-  color: #fff;
   display: block;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  font-weight: bold;
 `;
 
 export const CountdownWrapper = styled.div`
@@ -31,11 +31,13 @@ export const CountdownWrapper = styled.div`
     > h4 {
       font-size: 2rem;
       margin-bottom: 10px;
+      color: #595959;
     }
 
     > span {
       font-size: 4rem;
       line-height: 1;
+      color: #595959;
     }
   }
 `;

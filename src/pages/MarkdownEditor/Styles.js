@@ -15,5 +15,6 @@ export const TextArea = styled(Input.TextArea)`
 export const Preview = styled(ReactMarkdown)`
   margin-left: 1rem;
   padding: 1rem;
-  background: #434343;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
 `;

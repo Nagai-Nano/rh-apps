@@ -14,8 +14,8 @@ const UPPERCASE = LOWERCASE.toUpperCase();
 const NUMBERS = '0123456789';
 const SYMBOLS = '!@#$%^&*()_+-=[]{}|;.,/';
 
-const GenPass = () => {
-  const [password, setPassword] = useState('');
+function GenPass() {
+  const [password, setPassword] = useState('q^_V6/');
   const [length, setLength] = useState(6);
   const [options, setOptions] = useState({
     lowercase: true,
@@ -93,6 +93,6 @@ const GenPass = () => {
       </PageContent>
     </PageContainer>
   );
-};
+}
 
 export default GenPass;
