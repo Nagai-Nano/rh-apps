@@ -4,7 +4,8 @@ import {
   ClockCircleOutlined,
   KeyOutlined,
   SyncOutlined,
-  StarOutlined
+  StarOutlined,
+  TableOutlined
 } from '@ant-design/icons';
 
 import MarkdownEditor from 'pages/MarkdownEditor';
@@ -47,6 +48,13 @@ export default [
     title: 'Paper, Rock, Scissors',
     path: '/paper-rock-scissors',
     icon: <StarOutlined />,
+    Component: PaperRockScissors
+  },
+  {
+    key: 'infinite-kittens',
+    title: 'Infinite Kittens',
+    path: '/infinite-kittens',
+    icon: <TableOutlined />,
     Component: PaperRockScissors
   }
 ];

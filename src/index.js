@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'antd/dist/antd.less';
 
-import 'assets/style.less';
 import App from 'App';
-import GlobalStyle from 'shared/utils/globalStyle';
+import GlobalStyle from 'utils/globalStyle';
 
 ReactDOM.render(
   <React.Fragment>
