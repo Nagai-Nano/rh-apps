@@ -3,13 +3,15 @@ import {
   EditOutlined,
   ClockCircleOutlined,
   KeyOutlined,
-  SyncOutlined
+  SyncOutlined,
+  StarOutlined
 } from '@ant-design/icons';
 
 import MarkdownEditor from 'pages/MarkdownEditor';
 import Countdown from 'pages/Countdown';
 import GenPass from 'pages/GenPass';
 import TextConverter from 'pages/TextConverter';
+import PaperRockScissors from 'pages/PaperRockScissors';
 
 export default [
   {
@@ -39,5 +41,12 @@ export default [
     path: '/text-converter',
     icon: <SyncOutlined />,
     Component: TextConverter
+  },
+  {
+    key: 'paper-rock-scissors',
+    title: 'Paper, Rock, Scissors',
+    path: '/paper-rock-scissors',
+    icon: <StarOutlined />,
+    Component: PaperRockScissors
   }
 ];

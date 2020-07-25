@@ -33,8 +33,8 @@ const OPTIONS = [
 ];
 
 function TextConverter() {
-  const [selectedOptionIndex, setSelectedOptionIndex] = useState(0);
-  const [text, setText] = useState('');
+  const [selectedOptionIndex, setSelectedOptionIndex] = useState(2);
+  const [text, setText] = useState('I Luv U 3000!! UwU');
   const [converted, setConverted] = useState('');
 
   useEffect(() => {
