@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import {
   EditOutlined,
   ClockCircleOutlined,
@@ -8,11 +8,12 @@ import {
   TableOutlined
 } from '@ant-design/icons';
 
-import MarkdownEditor from 'pages/MarkdownEditor';
-import Countdown from 'pages/Countdown';
-import GenPass from 'pages/GenPass';
-import TextConverter from 'pages/TextConverter';
-import PaperRockScissors from 'pages/PaperRockScissors';
+const MarkdownEditor = lazy(() => import('pages/MarkdownEditor'));
+const Countdown = lazy(() => import('pages/Countdown'));
+const GenPass = lazy(() => import('pages/GenPass'));
+const TextConverter = lazy(() => import('pages/TextConverter'));
+const PaperRockScissors = lazy(() => import('pages/PaperRockScissors'));
+const InfiniteKittens = lazy(() => import('pages/InfiniteKittens'));
 
 export default [
   {
@@ -55,6 +56,6 @@ export default [
     title: 'Infinite Kittens',
     path: '/infinite-kittens',
     icon: <TableOutlined />,
-    Component: PaperRockScissors
+    Component: InfiniteKittens
   }
 ];

@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
-import { Layout } from 'antd';
+import { Layout, Spin } from 'antd';
 
 import routes from 'config/routes';
 import { Header, SideMenu, Content } from 'components';
@@ -13,12 +13,14 @@ function App() {
         <Layout style={{ marginLeft: 200 }}>
           <Header />
           <Content>
-            <Switch>
-              {routes.map(({ key, path, Component }) => (
-                <Route exact key={key} path={path} component={Component} />
-              ))}
-              <Route render={() => <Redirect to="/markdown-editor" />} />
-            </Switch>
+            <Suspense fallback={<Spin className="spin-center" />}>
+              <Switch>
+                {routes.map(({ key, path, Component }) => (
+                  <Route exact key={key} path={path} component={Component} />
+                ))}
+                <Route render={() => <Redirect to="/markdown-editor" />} />
+              </Switch>
+            </Suspense>
           </Content>
         </Layout>
       </Layout>
