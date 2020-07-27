@@ -14,4 +14,28 @@ export default createGlobalStyle`
     justify-content: center;
     align-items: center;
   }
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 10px;
+    background: #fff;
+  }
+
+  &::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    border-radius: 7px;
+    background-color: #8c8c8c;
+  }
 `;
