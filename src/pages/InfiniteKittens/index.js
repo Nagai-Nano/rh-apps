@@ -15,20 +15,27 @@ function InfiniteKittens() {
   const [totalPage, setTotalPage] = useState(0);
 
   useEffect(() => {
-    fetchImages();
+    let isCurrent = true;
+    fetchImages(isCurrent);
+
+    return () => {
+      isCurrent = false;
+    };
     // eslint-disable-next-line
   }, [page]);
 
-  const fetchImages = async () => {
+  const fetchImages = async (isCurrent) => {
     try {
       const response = await fetch(
         `https://api.unsplash.com/search/photos?page=${page}&query=kitten&client_id=${accessKey}&per_page=15`
       );
       const data = await response.json();
-      setTotalPage(data.total_pages);
-      setData((prev) => [...prev, ...data.results]);
+      if (isCurrent) {
+        setTotalPage(data.total_pages);
+        setData((prev) => [...prev, ...data.results]);
+      }
     } catch {
-      setError(true);
+      if (isCurrent) setError(true);
     }
   };
 

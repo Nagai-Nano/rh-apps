@@ -17,9 +17,11 @@ function ImageLoader({ src, alt, onImageClick }) {
   }, [src]);
 
   const onImageLoad = () => {
-    imageRef.current.src = src;
-    setError(false);
-    setLoading(false);
+    if (imageRef && imageRef.current) {
+      imageRef.current.src = src;
+      setError(false);
+      setLoading(false);
+    }
   };
 
   const onImageError = () => {
