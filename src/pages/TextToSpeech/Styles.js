@@ -31,9 +31,19 @@ export const CardBody = styled.div`
   padding: 2rem;
 `;
 
+export const InputGroup = styled.div`
+  margin-bottom: 1rem;
+
+  label {
+    display: inline-block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #727272;
+  }
+`;
+
 export const Select = styled(AntdSelect)`
   width: 100%;
-  margin-bottom: 1rem;
 `;
 
 export const Button = styled(AntdButton)`

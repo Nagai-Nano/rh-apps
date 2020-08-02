@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Spin, Input } from 'antd';
+import { Spin, Input, Slider } from 'antd';
 import { SoundOutlined } from '@ant-design/icons';
 
 import {
@@ -7,6 +7,7 @@ import {
   CardForm,
   CardTitle,
   CardBody,
+  InputGroup,
   Select,
   Button
 } from './Styles';
@@ -18,6 +19,8 @@ function TextToSpeech() {
   const [ready, setReady] = useState(false);
   const [voices, setVoices] = useState([]);
   const [selectedVoice, setSelectedVoice] = useState({});
+  const [rate, setRate] = useState(1);
+  const [pitch, setPitch] = useState(1);
   const [text, setText] = useState('I Love You 3000! UwU');
 
   useEffect(() => {
@@ -39,6 +42,14 @@ function TextToSpeech() {
     setSelectedVoice(voices.find((voice) => voice.voiceURI === value));
   };
 
+  const handleRateChange = (value) => {
+    setRate(value);
+  };
+
+  const handlePitchChange = (value) => {
+    setPitch(value);
+  };
+
   const handleTextChange = ({ target: { value } }) => {
     setText(value);
   };
@@ -47,6 +58,8 @@ function TextToSpeech() {
     if (!text) return;
     utterance.voice = selectedVoice;
     utterance.text = text;
+    utterance.rate = rate;
+    utterance.pitch = pitch;
     synth.speak(utterance);
   };
 
@@ -59,18 +72,42 @@ function TextToSpeech() {
       <CardForm>
         <CardTitle>Text To Speech</CardTitle>
         <CardBody>
-          <Select
-            size="large"
-            style={{ width: '100%' }}
-            value={selectedVoice.voiceURI}
-            onChange={handleSelectVoiceChange}
-          >
-            {voices.map(({ name, lang, voiceURI }) => (
-              <Select.Option key={voiceURI} value={voiceURI}>
-                {name} [{lang}]
-              </Select.Option>
-            ))}
-          </Select>
+          <InputGroup>
+            <label htmlFor="lang">Language</label>
+            <Select
+              id="lang"
+              size="large"
+              style={{ width: '100%' }}
+              value={selectedVoice.voiceURI}
+              onChange={handleSelectVoiceChange}
+            >
+              {voices.map(({ name, lang, voiceURI }) => (
+                <Select.Option key={voiceURI} value={voiceURI}>
+                  {name} [{lang}]
+                </Select.Option>
+              ))}
+            </Select>
+          </InputGroup>
+          <InputGroup>
+            <label htmlFor="rate">Rate</label>
+            <Slider
+              min={0.1}
+              max={10}
+              step={0.1}
+              value={rate}
+              onChange={handleRateChange}
+            />
+          </InputGroup>
+          <InputGroup>
+            <label htmlFor="pitch">Pitch</label>
+            <Slider
+              min={0}
+              max={2}
+              step={0.1}
+              value={pitch}
+              onChange={handlePitchChange}
+            />
+          </InputGroup>
           <Input.TextArea rows={12} value={text} onChange={handleTextChange} />
           <Button
             icon={<SoundOutlined />}
