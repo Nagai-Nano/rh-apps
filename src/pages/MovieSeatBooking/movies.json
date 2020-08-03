@@ -1,0 +1,89 @@
+[
+  {
+    "title": "A Whisker Away",
+    "genres": ["Animation", "Drama", "Romance", "Fantasy"],
+    "duration": "1h 44m",
+    "releaseDate": "06/18/2020",
+    "price": 10,
+    "overview": "Miyo \"Muge\" Sasaki is a peculiar second-year junior high student who has fallen in love with her classmate Kento Hinode. Muge resolutely pursues Kento every day, but he takes no notice of her. Nevertheless, while carrying a secret she can tell no one, Muge continues to pursue Kento. Muge discovers a magic mask that allows her to transform into a cat named Tarō. The magic lets Muge get close to Kento, but eventually it may also make her unable to transform back to a human.",
+    "posterUrl": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/8Ga1CI4ZIIF8fxyfjZ5sNlb75e4.jpg",
+    "bgUrl": "https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/eHTZoXmB4vnDqANZXPZcdAiYQo5.jpg",
+    "airingDate": [
+      "08/03/2020",
+      "08/04/2020",
+      "08/05/2020",
+      "08/06/2020",
+      "08/07/2020",
+      "08/08/2020",
+      "08/09/2020",
+      "08/10/2020"
+    ],
+    "airingTime": [
+      "13:00",
+      "14:00",
+      "15:00",
+      "16:00",
+      "17:00",
+      "18:00",
+      "19:00",
+      "20:00"
+    ],
+    "bookedSeat": ["A1", "A5", "C6", "G9", "F7", "G2", "H4"]
+  },
+  {
+    "title": "Goblin Slayer: Goblin's Crown",
+    "genres": ["Animation", "Adventure", "Action", "Fantasy", "Thriller"],
+    "duration": "1h 25m",
+    "releaseDate": "02/01/2020",
+    "price": 12,
+    "overview": "Goblin Slayer and his party head up to the snowy mountains in the north after receiving that request from the Sword Maiden to find any information on the Noble Fencer that disappeared after leaving to slay some goblins. A small village gets attacked, they encounter a mysterious chapel, and something about how these goblins are acting bothers the Goblin slayer. In order to save the captured Noble Fencer, the Goblin Slayer and his party head to an ancient fortress covered in snow to face off with a powerful foe and a horde of goblins!",
+    "posterUrl": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/oyDaF4za9C9GxfYSyZUmj2aZGJT.jpg",
+    "bgUrl": "https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/ySHlkHDbXztjdjRJ0pZN7FXRnaW.jpg",
+    "airingDate": [
+      "08/08/2020",
+      "08/09/2020",
+      "08/10/2020",
+      "08/11/2020",
+      "08/12/2020"
+    ],
+    "airingTime": [
+      "17:00",
+      "18:00",
+      "19:00",
+      "20:00",
+      "21:00",
+      "22:00",
+      "23:00",
+      "00:00"
+    ],
+    "bookedSeat": ["E3", "H1", "C8", "D10", "F9", "A7", "D1", "F1"]
+  },
+  {
+    "title": "Violet Evergarden: The Movie",
+    "genres": ["Animation", "Drama", "Romance", "Fantasy"],
+    "duration": "N/A",
+    "releaseDate": "09/18/2020",
+    "price": 20,
+    "overview": "The official website of the \"Violet Evergarden\" animated TV series announced an all-new animated film for the series on Monday that will have a simultaneous worldwide release in January 2020. Plot details are unknown.",
+    "posterUrl": "https://image.tmdb.org/t/p/w300_and_h450_bestv2/43H7PD4DHFhkJsNxbf85hAPkPi7.jpg",
+    "bgUrl": "https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/x7Vx9gBbGPnNoYNKnDTdaDABGxJ.jpg",
+    "airingDate": [
+      "08/20/2020",
+      "08/21/2020",
+      "08/22/2020",
+      "08/23/2020",
+      "08/24/2020"
+    ],
+    "airingTime": [
+      "09:00",
+      "10:00",
+      "20:00",
+      "21:00",
+      "22:00",
+      "23:00",
+      "00:00",
+      "01:00"
+    ],
+    "bookedSeat": ["A3", "B5", "B2", "D5", "D6"]
+  }
+]

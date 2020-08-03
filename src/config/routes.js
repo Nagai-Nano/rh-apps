@@ -6,7 +6,8 @@ import {
   SyncOutlined,
   StarOutlined,
   TableOutlined,
-  SoundOutlined
+  SoundOutlined,
+  TagOutlined
 } from '@ant-design/icons';
 
 const MarkdownEditor = lazy(() => import('pages/MarkdownEditor'));
@@ -16,6 +17,7 @@ const TextConverter = lazy(() => import('pages/TextConverter'));
 const PaperRockScissors = lazy(() => import('pages/PaperRockScissors'));
 const InfiniteKittens = lazy(() => import('pages/InfiniteKittens'));
 const TextToSpeech = lazy(() => import('pages/TextToSpeech'));
+const MovieSeatBooking = lazy(() => import('pages/MovieSeatBooking'));
 
 export default [
   {
@@ -66,5 +68,12 @@ export default [
     path: '/text-to-speech',
     icon: <SoundOutlined />,
     Component: TextToSpeech
+  },
+  {
+    key: 'movie-seat-booking',
+    title: 'Movie Seat Booking',
+    path: '/movie-seat-booking',
+    icon: <TagOutlined />,
+    Component: MovieSeatBooking
   }
 ];
