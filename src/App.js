@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 import { Layout, Spin } from 'antd';
 
 import routes from 'config/routes';
@@ -7,7 +7,7 @@ import { Header, SideMenu, Content } from 'components';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Layout style={{ minHeight: '100vh' }}>
         <SideMenu />
         <Layout style={{ marginLeft: 200 }}>
@@ -24,7 +24,7 @@ function App() {
           </Content>
         </Layout>
       </Layout>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
