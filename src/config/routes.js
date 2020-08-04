@@ -19,7 +19,7 @@ const PaperRockScissors = lazy(() => import('pages/PaperRockScissors'));
 const InfiniteKittens = lazy(() => import('pages/InfiniteKittens'));
 const TextToSpeech = lazy(() => import('pages/TextToSpeech'));
 const MovieSeatBooking = lazy(() => import('pages/MovieSeatBooking'));
-const MemoryMatchingCard = lazy(() => import('pages/MemoryMatchingCard'));
+const MemoryCards = lazy(() => import('pages/MemoryCards'));
 
 export default [
   {
@@ -79,10 +79,10 @@ export default [
     Component: MovieSeatBooking
   },
   {
-    key: 'memory-matching-card',
-    title: 'Memory Matching Card',
-    path: '/memory-matching-card',
+    key: 'memory-cards',
+    title: 'Memory Cards',
+    path: '/memory-cards',
     icon: <BorderOutlined />,
-    Component: MemoryMatchingCard
+    Component: MemoryCards
   }
 ];

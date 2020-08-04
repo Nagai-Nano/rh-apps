@@ -8,7 +8,7 @@ import Card from './Card';
 
 const cards = shuffle([...data, ...data]);
 
-function MemoryMatchingCard() {
+function MemoryCards() {
   const [opened, setOpened] = useState([]);
   const [matched, setMatched] = useState([]);
   const [move, setMove] = useState(0);
@@ -66,4 +66,4 @@ function MemoryMatchingCard() {
   );
 }
 
-export default MemoryMatchingCard;
+export default MemoryCards;
