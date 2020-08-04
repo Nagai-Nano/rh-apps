@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Nagai-Nano/rh-apps/precache-manifest.0492be553b9fbd68b8de8af96081c4dc.js"
+  "/Nagai-Nano/rh-apps/precache-manifest.d8239f2ef51c5cee7e1bcab31c436f97.js"
 );
 
 self.addEventListener('message', (event) => {
