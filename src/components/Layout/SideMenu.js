@@ -19,7 +19,7 @@ function AppSideMenu() {
       <Divider />
       <Menu mode="inline" defaultSelectedKeys={[pathname.slice(1)]}>
         {routes.map(({ key, title, path, icon }) => (
-          <Menu.Item key={key} icon={icon}>
+          <Menu.Item key={key} icon={icon} title={title}>
             <NavLink exact to={path}>
               {title}
             </NavLink>

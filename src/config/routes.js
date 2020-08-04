@@ -7,7 +7,8 @@ import {
   StarOutlined,
   TableOutlined,
   SoundOutlined,
-  TagOutlined
+  TagOutlined,
+  BorderOutlined
 } from '@ant-design/icons';
 
 const MarkdownEditor = lazy(() => import('pages/MarkdownEditor'));
@@ -18,6 +19,7 @@ const PaperRockScissors = lazy(() => import('pages/PaperRockScissors'));
 const InfiniteKittens = lazy(() => import('pages/InfiniteKittens'));
 const TextToSpeech = lazy(() => import('pages/TextToSpeech'));
 const MovieSeatBooking = lazy(() => import('pages/MovieSeatBooking'));
+const MemoryMatchingCard = lazy(() => import('pages/MemoryMatchingCard'));
 
 export default [
   {
@@ -75,5 +77,12 @@ export default [
     path: '/movie-seat-booking',
     icon: <TagOutlined />,
     Component: MovieSeatBooking
+  },
+  {
+    key: 'memory-matching-card',
+    title: 'Memory Matching Card',
+    path: '/memory-matching-card',
+    icon: <BorderOutlined />,
+    Component: MemoryMatchingCard
   }
 ];
